@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+    
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+  .navbar {
+    overflow: hidden;
+    background-color: #fff2E1;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+  .navbar-nav{
+    float:right;
+  }
+  .logo{
+    display: inline-block;
+    vertical-align: top;
+    height: 60px;
+    margin-left: 20px;
+  
+  }
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    background-color: #fff2E1;
+    padding: 70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .main {   
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    float: right;
+    background-color:#fff2E1;
+  
+  }
+  #first{
+    font-size:70px;
+  }
+  #third{
+    font-size: 20px;
+  }
+  #girl{
+    float: right;
+  }
+  .side .search{
+    color: #F48C06;
+  }
+  .button {
+    border:none;
+    color:white;
+    background-color: #F48C06;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .img{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
+  #learning{
+    padding-left: 50%;
+  }
+  #mentoring{
+    padding-left: 50%;
+  }
+  .visi{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  .left_side{
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    float: right;
+    background-color:#fff2E1;
+    padding: 20px;
+  }
+  .right_side{
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    background-color: #fff2E1;
+    padding: 70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .misi{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  .left_side2{
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    float: right;
+    background-color:white;
+    padding: 20px;
+  }
+  .right_side2{
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    background-color: white;
+    padding: 70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  /* Footer */
+  footer {
+    background-color: #1b1b3a;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    width: 140px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .footer-logo .logo-text h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .footer-logo .logo-text p {
+    margin-top: 5px;
+    color: #b8b8d1;
+  }
+  #text{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .newsletter {
+    margin: 20px 0;
+  }
+  #img2{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: auto;
+    border-radius: 10%;
+  }
+  .newsletter p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .newsletter input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .newsletter button {
+    padding: 10px 30px;
+    margin-left: 10px;
+    background-color: #4c52ff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #6a72ff;
+  }
+  
+  .footer-links {
+    margin: 20px 0;
+    color: #b8b8d1;
+  }
+  
+  .footer-links a {
+    color: #b8b8d1;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #8a8ab3;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /*Contact*/
+
+.contact-section {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff3e6;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.contact-text h1 {
+  font-size: 36px;
+  color: #ff8200;
+  margin-bottom: 20px;
+}
+
+.contact-text .highlight {
+  color: #3b59ff;
+}
+
+.contact-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #ff8200;
+}
+/* card */
+.card {
+  /* Add shadows to create the "card" effect */
+  
+  display:inline-flex !important;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #ff8200;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #ff9d3f;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.login-form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff3e6;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-container h2 {
+  text-align: center;
+  color: #ff8200;
+  margin-bottom: 20px;
+}
+
+.login-form-container label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.login-form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff8200;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form-container button:hover {
+  background-color: #ff9d3f;
+}
+
+.login-form-container p {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.login-form-container a {
+  color: #ff8200;
+  text-decoration: none;
+}
+
+.login-form-container a:hover {
+  text-decoration: underline;
+}
